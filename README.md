@@ -1,16 +1,19 @@
 # FlycoTabLayout
 
-Modify from [H07000223/FlycoTabLayout](https://github.com/H07000223/FlycoTabLayout)，fix bugs, add some attribute，support ViewPager2.
+Modify from [H07000223/FlycoTabLayout](https://github.com/H07000223/FlycoTabLayout)，fix bugs, add
+some attribute，support ViewPager2.
 
 #### [中文版](https://github.com/li-xiaojun/FlycoTabLayout/blob/master/README_CN.md)
+
 An Android TabLayout Lib has 3 kinds of TabLayout at present.
 
-* SlidingTabLayout: deeply modified from [PagerSlidingTabStrip](https://github.com/jpardogo/PagerSlidingTabStrip).
+* SlidingTabLayout: deeply modified
+  from [PagerSlidingTabStrip](https://github.com/jpardogo/PagerSlidingTabStrip).
     * new added attribute
     * new added kinds of indicators
     * new added unread msg tip
     * new added method for convenience
-    
+
     ```java
         /** no need to set titles in adapter */
         public void setViewPager(ViewPager vp, String[] titles)
@@ -26,13 +29,13 @@ An Android TabLayout Lib has 3 kinds of TabLayout at present.
         public void setTabData(String[] titles)
     ```
 
-* CommonTabLayout:unlike SlidingTabLayout's dependence on ViewPager,it is a tabLayout without dependence on ViewPager and 
-can be used freely with other widgets together.
+* CommonTabLayout:unlike SlidingTabLayout's dependence on ViewPager,it is a tabLayout without
+  dependence on ViewPager and can be used freely with other widgets together.
     * support kinds of indicators and indicator animation
     * support unread msg tip
     * support icon and icon gravity.
     * new added method for convenience
-    
+
     ```java
         /** support switch fragments itself */
         public void setTabData(ArrayList<CustomTabEntity> tabEntitys, FragmentManager fm, int containerViewId, ArrayList<Fragment> fragments)
@@ -41,16 +44,17 @@ can be used freely with other widgets together.
 * SegmentTabLayout
 
 ## Demo
+
 ![](https://github.com/H07000223/FlycoTabLayout/blob/master/preview_1.gif)
 
 ![](https://github.com/H07000223/FlycoTabLayout/blob/master/preview_2.gif)
 
 ![](https://github.com/H07000223/FlycoTabLayout/blob/master/preview_3.gif)
 
-
 ## Gradle
 
 1. Add it in your root build.gradle at the end of repositories:
+
 ```groovy
 allprojects {
     repositories {
@@ -59,11 +63,13 @@ allprojects {
     }
 }
 ```
+
 2. Add the dependency
-[![](https://jitpack.io/v/li-xiaojun/FlycoTabLayout.svg)](https://jitpack.io/#li-xiaojun/FlycoTabLayout)
+   [![](https://jitpack.io/v/journe/FlycoTabLayout.svg)](https://jitpack.io/#journe/FlycoTabLayout)
+
 ```
 dependencies {
-    implementation 'com.github.li-xiaojun:FlycoTabLayout:Tag'
+	 implementation 'com.github.journe:FlycoTabLayout:Tag'
 }
 ```
 
@@ -95,7 +101,7 @@ dependencies {
 | tl_textFontPath |dimension| set text font typaface
 | tl_textSelectColor |color| set text select color
 | tl_textUnselectColor |color|  set text unselect color
-| tl_textBold |boolean| set text is bold 
+| tl_textBold |boolean| set text is bold
 | tl_iconWidth |dimension| set icon width(only for CommonTabLayout)
 | tl_iconHeight |dimension|set icon height(only for CommonTabLayout)
 | tl_iconVisible |boolean| set icon is visible(only for CommonTabLayout)
